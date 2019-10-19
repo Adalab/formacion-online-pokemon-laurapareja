@@ -10,7 +10,7 @@ body{
 .logoPokedex{
     height: 170px;
     padding-top: 10px;
-    @media all and(max-width: 320px) {
+    @media all and(max-width: 500px) {
         height: 110px;
 
     }
@@ -19,7 +19,7 @@ body{
     position: relative;
     left:20%;
     height: 140px;
-    @media all and(max-width: 320px) {
+    @media all and(max-width: 500px) {
         height: 100px;
     }
 }
@@ -37,8 +37,7 @@ body{
     padding-left:25px;
     border-radius: 5px;
     font-size: 20px;   
-    @media all and(max-width: 320px) {
-        padding-left:0px;
+    @media all and(max-width: 500px) {
         width: 100%;
     }
 }
@@ -46,7 +45,7 @@ body{
     position: relative;
     color:rgb(104, 104, 104);
     right: 30px;
-    @media all and(max-width: 320px) {
+    @media all and(max-width: 500px) {
         position: absolute;
         padding-top: 8px;
     }
@@ -55,16 +54,12 @@ body{
 
 .pokeList{
     display: grid;
-    @media all and(max-width: 320px) {
+    @media all and(max-width: 500px) {
        grid-template-columns: 1fr;
        width:230px;
        gap: 20px;
     }
-    @media all and(min-width: 320px) {
-        grid-template-columns: 1fr 1fr;
-        width:80%;
-        gap: 20px;
-     }
+
     @media all and(min-width: 600px) {
         grid-template-columns: 1fr 1fr 1fr;
         width:90%;
@@ -94,12 +89,9 @@ body{
     height: 200px;
     position: absolute;
     z-index: 0;
-    @media all and(max-width: 320px) {
+    @media all and(max-width: 500px) {
         width:110px;
     } 
-    @media all and(min-width: 320px) {
-        width:17%;
-     }
      @media all and(min-width: 600px) {
         width:13%;
      }
@@ -193,7 +185,7 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    @media all and(max-width: 320px) {
+    @media all and(max-width: 500px) {
         flex-direction: column;
         align-items: center;
         height: 100%;
