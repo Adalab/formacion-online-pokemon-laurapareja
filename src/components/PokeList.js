@@ -1,6 +1,6 @@
 import React from 'react';
 import PokeCard from './PokeCard';
-
+import '../stylesheets/PokeList.scss'
 
 const renderPokeList = (pokemones, query) => {
     const pokemonesSelected = pokemones.filter(pokemones => {

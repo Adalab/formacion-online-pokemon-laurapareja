@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheets/PokeType.scss'
 
 const PokeType = (props) => {
     const { type } = props

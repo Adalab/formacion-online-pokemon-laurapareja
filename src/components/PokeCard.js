@@ -1,5 +1,6 @@
 import React from 'react';
 import PokeType from './PokeType';
+import '../stylesheets/PokeCard.scss'
 
 const renderPokeTypeList = (types) => {
     return types.map((type, index) => {
@@ -7,7 +8,6 @@ const renderPokeTypeList = (types) => {
             <PokeType key={index} index={index + 1} type={type} />
         )
     })
-
 }
 
 const PokeCard = (props) => {

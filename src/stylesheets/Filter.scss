@@ -1,0 +1,23 @@
+.filterName{
+    height: 50px;
+    width: 100%;
+    margin-bottom:25px;
+    padding-left:25px;
+    border-radius: 5px;
+    font-size: 20px; 
+    display: flex; 
+    @media all and(max-width: 500px) {
+        width: 100%;
+    }
+}
+
+.fa-search{
+    position: relative;
+    font-size: 25px;
+    color:rgb(104, 104, 104);
+    right: 45px;
+    padding-top: 15px;
+    @media all and(max-width: 500px) {
+        position: absolute;
+    }
+}
