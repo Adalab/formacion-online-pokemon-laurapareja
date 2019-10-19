@@ -38,7 +38,7 @@ class App extends React.Component {
       })
   }
   getFilterName(event) {
-    const filter = event.currentTarget.value;
+    const filter = event.currentTarget.value.toLowerCase();
     return this.setState({
       query: filter
     })
