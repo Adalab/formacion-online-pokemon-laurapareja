@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const getInfoPokemonsAPI = async () => {
-    const listResponse = await fetch('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=25')
+    const listResponse = await fetch('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=50')
     const listData = await listResponse.json()
 
     return listData.results.map(async (pokemon) => {

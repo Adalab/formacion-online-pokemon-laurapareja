@@ -3,14 +3,25 @@ import PokeCard from './PokeCard';
 import '../stylesheets/PokeList.scss'
 
 const renderPokeList = (pokemones, query) => {
-    const pokemonesSelected = pokemones.filter(pokemones => {
-        return pokemones.name.includes(query)
-    })
-    return pokemonesSelected.map((pokemon, index) => {
-        return (<li key={index} className="pokeItemList">
-            <PokeCard key={index} index={index + 1} pokemon={pokemon} />
-        </li>)
-    })
+    if (query.length <= 1) {
+        return pokemones.map((pokemon, index) => {
+            return (<li key={index} className="pokeItemList">
+                <PokeCard key={index} index={index + 1} pokemon={pokemon} />
+            </li>)
+        })
+    } else {
+        const pokemonesSelected = pokemones
+            .filter(myPokemon => {
+                return query === "" ? true : myPokemon.name.substr(0, 2).toUpperCase() === query.substr(0, 2).toUpperCase();
+            })
+        return pokemonesSelected.map((pokemon, index) => {
+            return (<li key={index} className="pokeItemList">
+                <PokeCard key={index} index={index + 1} pokemon={pokemon} />
+            </li>)
+        })
+    }
+
+
 }
 
 const PokeList = (props) => {
